@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>NetBanking</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>CreateProfileServlet</servlet-name>
+  <servlet-class>com.net.netbanking.first.CreateProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>CreateProfileServlet</servlet-name>
+  <url-pattern>/Registration</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>SigninForm</servlet-name>
+  <servlet-class>com.net.netbanking.first.SigninForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SigninForm</servlet-name>
+  <url-pattern>/SigninForm</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>Deposit</servlet-name>
+  <servlet-class>com.net.netbanking.first.Deposit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Deposit</servlet-name>
+  <url-pattern>/Deposit</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>Withdraw</servlet-name>
+  <servlet-class>com.net.netbanking.first.Withdraw</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Withdraw</servlet-name>
+  <url-pattern>/Withdraw</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>CheckBalance</servlet-name>
+  <servlet-class>com.net.netbanking.first.CheckBalance</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>CheckBalance</servlet-name>
+  <url-pattern>/CheckBalance</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>SigninDirect</servlet-name>
+  <servlet-class>com.net.netbanking.first.SigninDirect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SigninDirect</servlet-name>
+  <url-pattern>/SigninDirect</url-pattern>
+  </servlet-mapping>
+</web-app>
